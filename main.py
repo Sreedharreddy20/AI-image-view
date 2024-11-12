@@ -86,7 +86,7 @@ def list(bucket_name, user_id):
 @app.route('/')
 def index():
     user_id = session.get('user')
-    index.html = """ <body style="background-color: rgb(64, 224, 288)>;"""
+    background_color = "rgb(64,224,208"
     if not user_id:
         return redirect('/login')
 
